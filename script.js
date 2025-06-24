@@ -86,3 +86,4 @@ function reiniciar() {
   jogoAtivo = true;
   mensagem.textContent = "";
 }
+
