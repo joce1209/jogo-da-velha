@@ -7,6 +7,21 @@
 </head>
 <body>
   <h1>Jogo da Velha</h1>
+
+  <div>
+    <label>
+      <input type="radio" name="modo" value="humano" checked onchange="selecionarModo(this)"> 2 Jogadores
+    </label>
+    <label>
+      <input type="radio" name="modo" value="bot" onchange="selecionarModo(this)"> Contra o Bot
+    </label>
+  </div>
+
+  <div id="placar">
+    <span>Vitórias X: <span id="vitoriasX">0</span></span>
+    <span>Vitórias O: <span id="vitoriasO">0</span></span>
+  </div>
+
   <div id="tabuleiro">
     <div class="celula" data-index="0"></div>
     <div class="celula" data-index="1"></div>
@@ -18,6 +33,10 @@
     <div class="celula" data-index="7"></div>
     <div class="celula" data-index="8"></div>
   </div>
+
   <p id="mensagem"></p>
   <button onclick="reiniciar()">Reiniciar</button>
+
   <script src="script.js"></script>
+</body>
+</html>
